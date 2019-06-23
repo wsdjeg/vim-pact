@@ -34,7 +34,9 @@ syn keyword pactFunc insert keylog keys read select txids txlog update
 syn keyword pactFunc with-default-read with-read write
 " time
 syn keyword pactFunc add-time days diff-time format-time hours minutes parse-time time
-
+" Operators
+syn keyword pactFunc != * + - / < <= = > >= ^
+syn keyword pactFunc abs and and? ceiling exp floor in log mod not not? or or? round sqrt
 
 " comments
 syn match pactComment /;.*$/ contains=pactTodo,@Spell
