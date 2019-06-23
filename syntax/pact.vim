@@ -28,6 +28,10 @@ syn keyword pactSyntax module module* module+ require provide quote
 " https://pact-language.readthedocs.io/en/latest/pact-functions.html
 " general
 syn keyword pactFunc at
+" Database
+syn keyword pactFunc creat-table describe-keyset describe-module describe-table
+syn keyword pactFunc insert keylog keys read select txids txlog update
+syn keyword pactFunc with-default-read with-read write
 " time
 syn keyword pactFunc add-time days diff-time format-time hours minutes parse-time time
 
