@@ -47,6 +47,10 @@ syn keyword pactFunc add-time days diff-time format-time hours minutes parse-tim
 syn keyword pactFunc != * + - / < <= = > >= ^
 syn keyword pactFunc abs and and? ceiling exp floor in log mod not not? or or? round sqrt
 
+
+" Keysets
+syn keyword pactFunc define-keyset enforce-keyset keys-2 keys-all keys-any read-keyset
+
 " comments
 syn match pactComment /;.*$/ contains=pactTodo,@Spell
 " syn region pactMultilineComment start=/#|/ end=/|#/ contains=pactMultilineComment,pactTodo,pactNote,@Spell
