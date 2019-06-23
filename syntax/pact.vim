@@ -36,6 +36,12 @@ syn keyword pactFunc with-default-read with-read write
 syn keyword pactFunc add-time days diff-time format-time hours minutes parse-time time
 
 
+" comments
+syn match pactComment /;.*$/ contains=pactTodo,@Spell
+" syn region pactMultilineComment start=/#|/ end=/|#/ contains=pactMultilineComment,pactTodo,pactNote,@Spell
+syn keyword pactTodo FIXME TODO contained
+
+
 syn region pactString start=/\%(\\\)\@<!"/ skip=/\\[\\"]/ end=/"/
 if version >= 508 || !exists("did_pact_syntax_inits")
   if version < 508
