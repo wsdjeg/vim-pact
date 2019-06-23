@@ -26,7 +26,12 @@ syn keyword pactSyntax module module* module+ require provide quote
 
 " all built-in functions
 " https://pact-language.readthedocs.io/en/latest/pact-functions.html
+" general
 syn keyword pactFunc at
+" time
+syn keyword pactFunc add-time days diff-time format-time hours minutes parse-time time
+
+
 syn region pactString start=/\%(\\\)\@<!"/ skip=/\\[\\"]/ end=/"/
 if version >= 508 || !exists("did_pact_syntax_inits")
   if version < 508
