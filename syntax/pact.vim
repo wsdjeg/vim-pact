@@ -43,8 +43,10 @@ syn match pactComment /;.*$/ contains=pactTodo,@Spell
 " syn region pactMultilineComment start=/#|/ end=/|#/ contains=pactMultilineComment,pactTodo,pactNote,@Spell
 syn keyword pactTodo FIXME TODO contained
 
-
+" Literals
 syn region pactString start=/\%(\\\)\@<!"/ skip=/\\[\\"]/ end=/"/
+syn keyword pactBoolean  true false
+
 if version >= 508 || !exists("did_pact_syntax_inits")
   if version < 508
     let did_pact_syntax_inits = 1
