@@ -59,6 +59,7 @@ syn keyword pactTodo FIXME TODO contained
 " Literals
 syn region pactString start=/\%(\\\)\@<!"/ skip=/\\[\\"]/ end=/"/
 syn keyword pactBoolean  true false
+syn match pactSymbol /'\S*/
 
 if version >= 508 || !exists("did_pact_syntax_inits")
   if version < 508
