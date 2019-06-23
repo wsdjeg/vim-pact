@@ -29,7 +29,14 @@ syn keyword pactSyntax deftable let let* step step-with-rollback use module
 " all built-in functions
 " https://pact-language.readthedocs.io/en/latest/pact-functions.html
 " general
-syn keyword pactFunc at
+syn keyword pactFunc at bind chain-data compose constantly contains
+syn keyword pactFunc define-namespace drop
+syn keyword pactFunc enforce enforce-one enforce-pact-version filter fold format hash
+syn keyword pactFunc identity if length list list-modules make-list map namespace pact-id
+syn keyword pactFunc pact-version read-decimal read-integer read-msg remove resume reverse
+syn keyword pactFunc sort str-to-int take tx-hash typeof where yield
+
+
 " Database
 syn keyword pactFunc creat-table describe-keyset describe-module describe-table
 syn keyword pactFunc insert keylog keys read select txids txlog update
