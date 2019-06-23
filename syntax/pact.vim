@@ -24,6 +24,10 @@ endif
 
 syn keyword pactSyntax module module* module+ require provide quote
 
+" all built-in functions
+" https://pact-language.readthedocs.io/en/latest/pact-functions.html
+syn keyword pactFunc at bind chain-data constantly contains define-namespace
+
 if version >= 508 || !exists("did_pact_syntax_inits")
   if version < 508
     let did_pact_syntax_inits = 1
