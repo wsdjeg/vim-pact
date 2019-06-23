@@ -22,7 +22,9 @@ else
   setlocal iskeyword=33,35-39,42-58,60-90,94,95,97-122,126,_
 endif
 
-syn keyword pactSyntax module module* module+ require provide quote
+" Special forms
+syn keyword pactSyntax bless defun defcap defconst defpact defschema
+syn keyword pactSyntax deftable let let* step step-with-rollback use module
 
 " all built-in functions
 " https://pact-language.readthedocs.io/en/latest/pact-functions.html
