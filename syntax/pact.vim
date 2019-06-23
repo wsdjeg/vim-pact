@@ -24,7 +24,8 @@ endif
 
 " Special forms
 syn keyword pactSyntax bless defun defcap defconst defpact defschema
-syn keyword pactSyntax deftable let let* step step-with-rollback use module interface implements
+syn keyword pactSyntax deftable let let* step step-with-rollback use module
+syn keyword pactSyntax property interface implements
 
 " all built-in functions
 " https://pact-language.readthedocs.io/en/latest/pact-functions.html
