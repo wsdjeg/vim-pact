@@ -25,6 +25,7 @@ endif
 " Special forms
 syn keyword pactSyntax bless defun defcap defconst defpact defschema
 syn keyword pactSyntax deftable let let* step step-with-rollback use module
+syn keyword pactSyntax property interface implements
 
 " all built-in functions
 " https://pact-language.readthedocs.io/en/latest/pact-functions.html
@@ -99,4 +100,3 @@ if version >= 508 || !exists("did_pact_syntax_inits")
 endif
 
 let b:current_syntax = "pact"
-
