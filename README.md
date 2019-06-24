@@ -10,9 +10,9 @@ there are two ways to use this plugin:
 
 1. using vim-pact within spacevim, just need to load [lang#pact](http://spacevim.org/layers/lang/pact/) layer:
 
-```
-[layers]
-  name = "lang#pact"
+```toml
+[[layers]]
+ name = "lang#pact"
 ```
 
 2. using vim-pact without SpaceVim, using Vim plugin manager to install it, for example [dein](https://github.com/Shougo/dein.vim):
