@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.pact setlocal filetype=pact
+au BufNewFile,BufRead *.pact,*.repl setlocal filetype=pact
